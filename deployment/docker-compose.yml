@@ -1,0 +1,10 @@
+db:
+    image: mysql:5.7
+    container_name: mysql_jasoet
+    ports:
+        - "3306:3306"
+    environment:
+        - MYSQL_ROOT_PASSWORD=localhost
+        - MYSQL_USER=jasoet
+        - MYSQL_PASSWORD=localhost
+        - MYSQL_DATABASE=vertx

@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/vertx?autoReconnect=true&useSSL=false
+        username: jasoet
+        password: localhost
+        validation-query: SELECT 1;
+        test-on-borrow: true
+        validation-interval: 30000
+    jpa:
+        database: MYSQL
+        hibernate:
+            ddl-auto: update
+            naming:
+              strategy: org.hibernate.cfg.ImprovedNamingStrategy
+        show-sql: false
